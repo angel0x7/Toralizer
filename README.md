@@ -29,11 +29,20 @@ L'outil repose sur la technique du **LD_PRELOAD Hooking**. Il intercepte l'appel
 # Installation des dépendances
 sudo apt update
 sudo apt install build-essential tor curl -y
+```
 
+```bash
 # Lancement du service Tor
 sudo service tor start
-
+# Vérification de l'état d'exécution
+sudo service tor status 
 ```
+---
+**Exemple de résultat:**
+
+![Status example](https://github.com/angel0x7/Toralizer/blob/main/pictures/tor_Status.png)
+
+---
 
 ## Importation du Toralizer 
 
@@ -64,5 +73,10 @@ Vérification du tunnel SOCKS vers une IP publique (ex: Cloudflare DNS) :
 LD_PRELOAD=./toralizer.so nc -z -v 1.1.1.1 80
 ```
 
+---
 
+**Exemple de résultat:**
+
+![Tor exécution example](https://github.com/angel0x7/Toralizer/blob/main/pictures/tor_examples.png)
+---
 
