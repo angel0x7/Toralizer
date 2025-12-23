@@ -1,4 +1,4 @@
-#  Toralizer C
+#  Toralizer 
 
 **Toralizer** est un outil de "torification" léger développé en C pour Linux/WSL. Il permet de forcer n'importe quelle application réseau (comme `curl`, `wget` ou `nc`) à passer par le réseau **Tor** sans modifier le code source de l'application originale.
 
